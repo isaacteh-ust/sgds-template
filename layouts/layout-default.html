@@ -1,14 +1,10 @@
 <!doctype html>
 <html lang="en">
     <head>
-        {%- include sgds-head.html -%}
+        {%- include "sgds-head.html" -%}
     </head>
-    {% set offsetdropdown %}
-    {% if page.url contains '/docs/' or page.url contains '/patterns/' or page.url contains '/guides/' and page.title !='Guides' %}
-        {% set offsetdropdown = "has-component-dropdown" %}
-    {% endif %}
-    {% endset %}
-    <body class="has-navbar-fixed-top {{offset-dropdown}}">
+
+    <body class="has-navbar-fixed-top {{ offsetdropdown }}">
         {% if jekyll.environment == "production" %}
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV9NNPT"
@@ -21,12 +17,12 @@
         <!-- End Google Tag Manager (noscript) -->
         {% endif %}
         <main>
-            {%- include sgds-agencyhead.html -%}
+            {%- include "sgds-agencyhead.html" -%}
             <div class="content-page">
                 {{content}}
             </div>
         </main>
-        {%- include sgds-footer.html -%}
-        {%- include import-scripts.html -%}
+        {%- include "sgds-footer.html" -%}
+        {%- include "import-scripts.html" -%}
     </body>
 </html>
