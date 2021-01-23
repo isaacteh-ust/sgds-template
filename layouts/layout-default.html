@@ -19,7 +19,7 @@
         <main>
             {%- include "sgds-agencyhead.html" -%}
             <div class="content-page">
-                {{content}}
+                {% block content %}{% endblock %}
             </div>
         </main>
         {%- include "sgds-footer.html" -%}
