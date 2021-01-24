@@ -1,4 +1,4 @@
-stackbitVersion: ~0.3.0
+stackbitVersion: ~0.2.0
 ssgName: unibit
 buildCommand: unibit build
 publishDir: output
@@ -33,85 +33,118 @@ models:
   home:
     type: page
     label: Home
-    layout: layout-home
+    template: home
     file: index.md
     hideContent: false
     singleInstance: true
     fields:
       - type: string
         name: title
+        label: Title
+        description: The title of the page.
+        required: true
       - type: string
-        name: content_intro
-        label: Content Intro
+        name: heading
+        label: Heading
+        description: The heading displayed on the homepage
+      - type: boolean
+        name: show_button
+        label: Show Button
+        description: Show or hide the button on the hompage
       - type: string
-        name: content_intro_description
-        label: Content Intro Decsription
+        name: homepage_button_link
+        label: Button URL
+        description: Button link
       - type: string
-        name: content_intro_button_link
-        label: Content Intro Button Link
+        name: homepage_button_text
+        label: Button Text
+        description: Text displayed in the button
+  links:
+    type: data
+    file: links.json
+    label: Supported Platforms
+    fields:
+      - type: list
+        name: ssg
+        label: Static Site Generators
+        description: A list of static site generators supported by Stackbit
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Title
+              required: true
+            - type: string
+              name: url
+              label: URL
+              widget: url
+              required: true
+      - type: list
+        name: cms
+        label: Headless CMS
+        description: A list of headless CMS supported by Stackbit
+        items:
+          type: object
+          labelField: title
+          fields:
+            - type: string
+              name: title
+              label: Title
+              required: true
+            - type: string
+              name: url
+              label: URL
+              widget: url
+              required: true
+  feature:
+    type: page
+    label: Feature
+    template: feature
+    folder: features
+    fields:
+      - type: string
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+      - type: string
+        name: description
+        label: Description
+        description: The text shown just below the features title.
       - type: image
-        name: content_intro_img
-        label: Content Intro Image
-      - type: image
-        name: content_component_img
-        label: Content Intro Image
+        name: image_thumbnail
+        label: Thumbnail Image
+        description: The image shown in the feature.
       - type: string
-        name: content_component
-        label: Content Component
+        name: button_link
+        label: Button Link
+        description: The button link
       - type: string
-        name: content_component_head
-        label: Content Component Head
+        name: button_text
+        label: Button Text
+        description: The button text
+  features:
+    type: page
+    label: Features
+    template: features
+    fields:
       - type: string
-        name: content_component_description
-        label: Content Component Description
-      - type: image
-        name: content_guides_img
-        label: Content Intro Image
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
+  about:
+    type: page
+    label: About
+    template: basic
+    fields:
       - type: string
-        name: content_guides
-        label: Content Guides
-      - type: string
-        name: content_guides_head
-        label: Content Guides Head
-      - type: string
-        name: content_guides_description
-        label: Content Guides Description
-      - type: string
-        name: content_component_link
-        label: Content Component Link
-      - type: string
-        name: content_guides_link
-        label: Content Guides Link
-      - type: string
-        name: container_item_1
-      - type: string
-        name: container_item_1_1
-      - type: string
-        name: container_item_2
-      - type: string
-        name: container_item_2_1
-      - type: string
-        name: container_item_3
-      - type: string
-        name: container_item_3_1
-      - type: string
-        name: container_item_4
-      - type: string
-        name: container_item_4_1
-      - type: string
-        name: container_item_5
-      - type: string
-        name: container_item_5_1
-      - type: string
-        name: container_item_6
-      - type: string
-        name: container_item_6_1
-      - type: string
-        name: button_1
-      - type: string
-        name: button_1_link
-      - type: string
-        name: container_item_head
+        name: title
+        label: Title
+        description: The title of the page.
+        required: true
 stackbit_banner:
   show_banner: false
   name: Universal

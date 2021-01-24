@@ -1,7 +1,7 @@
 baseurl: "/"
-title: "SGDS"
+title: "Universal"
 params:
-  logo: logo_sgds.png
+  logo: 'images/logo.svg'
   docs_url: 'https://docs.stackbit.com'
 menus:
   main:
@@ -16,7 +16,7 @@ menus:
       title: About
 sass:
   input_file: sass/main.scss.njk
-  output_file: css/sgds.css
+  output_file: assets/css/main.css
   indentWidth: 4
   outputStyle: nested
   precision: 10
