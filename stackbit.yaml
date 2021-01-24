@@ -25,7 +25,6 @@ models:
   home:
     type: page
     label: Home
-    template: home
     file: index.md
     hideContent: false
     singleInstance: true
