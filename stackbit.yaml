@@ -6,15 +6,6 @@ staticDir: static
 uploadDir: images
 dataDir: data
 pagesDir: content
-pageLayoutKey: layout
-metadata:
-  title: universal
-  description: A starter theme for Unibit
-  author: Stackbit
-  authorURL: 'https://www.stackbit.com'
-  images:
-    small: images/demo-256x192.png
-    large: images/demo-1024x768.png
 models:
   config:
     type: config
@@ -112,8 +103,3 @@ models:
         name: button_1_link
       - type: string
         name: container_item_head
-stackbit_banner:
-  show_banner: false
-  name: Universal
-  create_url: 'https://app.stackbit.com/create?theme=universal'
-  github_url: 'https://github.com/stackbithq/stackbit-theme-universal'
