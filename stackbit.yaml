@@ -70,7 +70,6 @@ models:
       - type: string
         name: content_guides
         label: Content Guides
-
       - type: string
         name: content_guides_head
         label: Content Guides Head
