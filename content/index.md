@@ -4,8 +4,8 @@ title: Home
 content_intro: SIngapore Goverment Design System
 content_intro_description: Build your next best digital experience for Singapore
 content_intro_button_link: Get Started
-content_intro_img: assets/img/bg_people.png
-content_component_img: assets/img/bg_components.png
+content_intro_img: images/bg_people.png
+content_component_img: images/bg_components.png
 content_component: Components
 content_component_head: Deliver your next big idea
 content_component_description: >-
@@ -13,7 +13,7 @@ content_component_description: >-
   and products.
 content_component_link: /guides/
 content_guides_link: /docs/
-content_guides_img: assets/img/bg_guides.png
+content_guides_img: images/bg_guides.png
 content_guides: Guides
 content_guides_head: Be prepared for your next digital project
 content_guides_description: >-

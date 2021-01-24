@@ -72,7 +72,7 @@ permalink: /about/
 
 <h3>How Everything Fits</h3>
 
-<img src="/assets/img/img_relationships.png" alt="relationships" />
+<img src="/images/img_relationships.png" alt="relationships" />
 
 <hr>
 
