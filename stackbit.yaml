@@ -32,6 +32,41 @@ models:
         name: url
       - type: string
         name: lv2
+  icons:
+    type: data
+    label: initial-variables
+    file: initial-variables.json
+    fields:
+      - type: list
+        name: $primary
+        items:
+          type: object
+          label: primary
+          labelField: title
+          fields:
+            - type: string
+              name: name
+            - type: string
+              name: value
+            - type: string
+              name: type
+            - type: string
+              name: state     
+      - type: list
+        name: $secondary
+        items:
+          type: object
+          label: $secondary
+          labelField: title
+          fields:
+            - type: string
+              name: name
+            - type: string
+              name: value
+            - type: string
+              name: type
+            - type: string
+              name: state           
   guides:
     type: page
     label: Guides
