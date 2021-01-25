@@ -7,14 +7,6 @@ uploadDir: images
 dataDir: data
 pagesDir: content
 pageLayoutKey: layout
-logicFields:
-  - blog_feed_section.recent_count
-  - blog_feed_section.background_image_opacity
-  - features_section.background_image_opacity
-  - hero_section.background_image_opacity
-  - grid_section.background_image_opacity
-  - cta_section.background_image_opacity
-  - form_section.background_image_opacity
 metadata: 
   title: DIY
   description: A "do it yourself" Stackbit theme
@@ -40,22 +32,6 @@ models:
         name: url
       - type: string
         name: lv2
-  post:
-    type: page
-    label: "Blog Post"
-    folder: contents/docs
-    urlPath: "/docs/{slug}"
-    fields:
-      - type: string
-        name: title
-        label: Title
-        description: Docs Page.
-      - type: string
-        name: permalink
-        label: Permalink
-      - type: string
-        name: layout
-        label: Layout
   guides:
     type: page
     label: Guides
@@ -104,6 +80,7 @@ models:
   about:
     type: page
     label: About
+    layout: layout-about
     file: contents/about/content-about.md
     singleInstance: true
     fields:
@@ -141,7 +118,7 @@ models:
         label: Content Intro Decsription
       - type: string
         name: content_intro_button_link
-        labe: Content Intro Button Link
+        label: Content Intro Button Link
       - type: image
         name: content_intro_img
         label: Content Intro Image
