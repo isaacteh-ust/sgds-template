@@ -54,6 +54,6 @@ exclude:
 sass:
   sass_dir: static/custom-css 
   input_file: sass/main.scss.njk
-  output_file: assets/css/main.css
+  output_file: assets/custom-css/main.css
 baseurl: ''
 url: 
