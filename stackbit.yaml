@@ -1,0 +1,17 @@
+stackbitVersion: ~0.3.0
+ssgName: unibit
+buildCommand: unibit build
+publishDir: output
+staticDir: static
+uploadDir: images
+dataDir: data
+pagesDir: content
+pageLayoutKey: layout
+pageData:
+  - pagePath: "/"
+    initialExpandedPaths:
+      - '[0]'
+      - '[0].fields.sections'
+      - '[0].fields.sections.items[0]'
+      - '[0].fields.sections.items[0].fields.title'
+      - '[0].fields.sections.items[0].fields.subtitle'
