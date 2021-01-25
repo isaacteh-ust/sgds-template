@@ -25,19 +25,6 @@ models:
     type: data
     label: navigation
     file: navigation.yml
-    fields:
-      - type: string
-        name: title
-      - type: string
-        name: url
-      - type: string
-        name: target  
-      - type: string
-        name: lv2
-  navigation:
-    type: data
-    label: navigation
-    file: navigation.yml
     isList: true
     items:
       type: object
@@ -66,7 +53,7 @@ models:
                     - type: string
                       name: title
                     - type: string
-                      name: url         
+                      name: url      
   guides:
     type: page
     label: Guides
