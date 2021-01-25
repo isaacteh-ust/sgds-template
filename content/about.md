@@ -3,6 +3,7 @@ layout: layout-about
 title: About
 permalink: /about/
 ---
+
 <h2>Background</h2>
 <p>
     The Singapore Government Design System (SGDS) was developed to empower
