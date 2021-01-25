@@ -31,42 +31,42 @@ models:
       - type: string
         name: url
       - type: string
+        name: target  
+      - type: string
         name: lv2
-  icons:
+  navigation:
     type: data
-    label: initial-variables
-    file: initial-variables.json
-    fields:
-      - type: list
-        name: $primary
-        items:
-          type: object
-          label: primary
-          labelField: title
-          fields:
-            - type: string
-              name: name
-            - type: string
-              name: value
-            - type: string
-              name: type
-            - type: string
-              name: state     
-      - type: list
-        name: $secondary
-        items:
-          type: object
-          label: $secondary
-          labelField: title
-          fields:
-            - type: string
-              name: name
-            - type: string
-              name: value
-            - type: string
-              name: type
-            - type: string
-              name: state           
+    label: navigation
+    file: navigation.yml
+    isList: true
+    items:
+      type: object
+      fields:
+        - type: string
+          name: title
+        - type: string
+          name: url
+        - type: list
+          name: lv2
+          items:
+            type: object
+            label: lv2
+            labelField: title
+            fields:
+              - type: string
+                name: title
+              - type: string
+                name: url
+              - type: list
+                name: lv3
+                items:
+                  type: object
+                  label: lv3
+                  fields:
+                    - type: string
+                      name: title
+                    - type: string
+                      name: url         
   guides:
     type: page
     label: Guides
