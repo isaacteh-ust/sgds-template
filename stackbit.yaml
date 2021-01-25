@@ -37,7 +37,6 @@ models:
           name: lv2
           items:
             type: object
-            label: lv2
             labelField: title
             fields:
               - type: string
@@ -48,7 +47,6 @@ models:
                 name: lv3
                 items:
                   type: object
-                  label: lv3
                   fields:
                     - type: string
                       name: title
