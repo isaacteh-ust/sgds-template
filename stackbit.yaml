@@ -1,4 +1,3 @@
-
 stackbitVersion: ~0.3.0
 ssgName: unibit
 buildCommand: unibit build
