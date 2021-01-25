@@ -35,6 +35,7 @@ models:
   guides:
     type: page
     label: Guides
+    layout: layout-guides
     file: contents/guides/index.md
     singleInstance: true
     fields:
@@ -100,6 +101,7 @@ models:
   home:
     type: page
     label: Home
+    layout: layout-home
     file: index.md
     singleInstance: true
     urlPath: '/'
