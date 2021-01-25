@@ -21,6 +21,17 @@ stackbit_banner:
   create_url: 'https://app.stackbit.com/create?theme=diy'
   github_url: 'https://github.com/stackbithq/stackbit-theme-diy'
 models:
+  navigation:
+    type: data
+    label: navigation
+    file: navigation.yml
+    fields:
+      - type: string
+        name: title
+      - type: string
+        name: url
+      - type: string
+        name: lv2
   guides:
     type: page
     label: Guides
